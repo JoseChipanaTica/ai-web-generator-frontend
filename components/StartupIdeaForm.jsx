@@ -31,7 +31,7 @@ const StartupIdeaForm = () => {
   return (
     <div className="w-3/4 border shadow-2xl p-8 rounded-3xl flex flex-col justify-center items-center">
       <div className="text-center py-10">
-        <h1 className="text-slate-800">What's your startup idea?</h1>
+        <h1 className="text-slate-800">What is your startup idea?</h1>
       </div>
       <textarea
         className="shadow-sm p-4 w-full text-slate-700 font-medium sm:w-4/5 h-60 text-xl md:text-2xl md:py-3 border-gray-600 border rounded-2xl placeholder-slate-400 min-h-[120px] focus:ring-green-500 focus:border-green-500"
