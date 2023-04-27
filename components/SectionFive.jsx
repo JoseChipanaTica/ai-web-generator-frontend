@@ -1,10 +1,19 @@
+import Image from "next/image";
 import React from "react";
 
-const SectionFive = ({ title, subtitle }) => {
+const SectionFive = ({ backgroundImg = "/placeholder/placeholder2.png" }) => {
   return (
-    <div className="h-[500px] p-2 mt-4 mb-4 flex flex-col justify-center items-center shadow-inner border rounded-3xl">
-      <h2 className="p-2 text-xl font-bold">{title}</h2>
-      <p className="p-2 text-gray-600">{subtitle}</p>
+    <div className="flex flex-col justify-center items-center">
+      <div className="h-[600px] w-full    flex flex-row-reverse items-center   ">
+        <div className=" w-full h-[400px]  rounded-xl flex flex-row-reverse justify-center relative ">
+          <Image
+            fill
+            className="object-cover  rounded-2xl shadow-lg  "
+            src={backgroundImg}
+            alt="Background image"
+          ></Image>
+        </div>
+      </div>
     </div>
   );
 };

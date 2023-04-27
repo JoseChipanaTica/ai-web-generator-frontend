@@ -14,7 +14,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="min-h-screen flex  justify-center items-center">
+      <div className="w-full bg-gray-50 h-[100px] flex flex-col justify-center items-center">
+        <h1 className="font-bold text-3xl"> FastFlow</h1>
+      </div>
+      <main className="min-h-screen flex bg-gray-50  justify-center items-center">
         <StartupIdeaForm></StartupIdeaForm>
       </main>
     </>
