@@ -6,6 +6,8 @@ import SectionTwo from "../components/SectionTwo";
 import SectionThree from "../components/SectionThree";
 import SectionFour from "../components/SectionFour";
 import SectionFive from "../components/SectionFive";
+import SectionSix from "@/components/SectionSix";
+import SectionLeft from "@/components/SectionLeft";
 
 const AIGenerated = () => {
   const router = useRouter();
@@ -25,35 +27,72 @@ const AIGenerated = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="grid md:grid-cols-4 min-h-screen gap-4 p-4">
-        <div className="col-span-1 shadow-inner border hover:shadow-2xl  rounded-3xl p-4 h-[400px] md:h-[700px]">
-          <h1>AIGenerated</h1>
+
+      <div className="w-full bg-gray-50 h-[100px] flex flex-col justify-center items-center">
+        <h1 className="font-bold text-3xl"> FastFlow</h1>
+      </div>
+      <div className="grid md:grid-cols-4 min-h-screen gap-4 p-4 bg-gray-50">
+        <div className="col-span-1   rounded-3xl p-2 h-[800px] md:h-[850px]">
+          <div className="bg-gradient-to-r from-blue-600 to-pink-500  p-4 rounded-xl">
+            <SectionLeft />
+          </div>
+          <div className="p-2 flex-col flex overflow-hidden overflow-x-auto">
+            <h1 className="text-xs mt-2 text-blue-900">No-Code Site Editor</h1>
+            <p className="text-xs text-black mt-2">
+              Make content updates using Mixo's site editor
+            </p>
+
+            <h1 className="text-xs mt-2 text-blue-900">
+              Scalable Site Hosting
+            </h1>
+            <p className="text-xs text-black mt-2">
+              Site hosted on Mixo's Global Content Network
+            </p>
+
+            <h1 className="text-xs mt-2 text-blue-900">Social Sharing Ready</h1>
+            <p className="text-xs text-black mt-2">
+              Social images and description generated
+            </p>
+
+            <h1 className="text-xs mt-2 text-blue-900">
+              Content Optimized for SEO
+            </h1>
+            <p className="text-xs text-black mt-2">
+              Targeted Keywords: repair, maintenance, automobile, tools
+            </p>
+
+            <h1 className="text-xs mt-2 text-blue-900">
+              Mobile First Responsive Design
+            </h1>
+            <p className="text-xs text-black mt-2">
+              {" "}
+              Mobile, Tablet and Desktop
+            </p>
+          </div>
         </div>
 
-        <div className="md:col-span-3 rounded-3xl h-[700px] overflow-auto  border shadow-3xl hover:shadow-inner p-8 ">
+        <div className="md:col-span-3 rounded-3xl h-[700px] overflow-auto  border shadow-inner   ">
           {data ? (
             <div>
-              <SectionOne
-                title={data.sectionOne.title}
-                subtitle={data.sectionOne.subtitle}
-              />
+              <div className="h-[60px] w-full p-2 bg-gray-100 rounded-tl-3xl rounded-tr-3xl border flex justify-center  ">
+                <div className="w-1/5 flex items-center">
+                  <div className="w-[10px] h-[10px] md:w-[15px] md:h-[15px] ml-2 bg-gray-300 rounded-full"></div>
+                  <div className="w-[10px] h-[10px] md:w-[15px] md:h-[15px] ml-2 bg-gray-300  rounded-full"></div>
+                  <div className="w-[10px] h-[10px] md:w-[15px] md:h-[15px] ml-2 bg-gray-300  rounded-full"></div>
+                </div>
+                <div className="w-4/5 flex items-center ml-2">
+                  <button className="md:w-2/4 w-full text-xs flex bg-white hover:text-black text-gray-400 p-2 h-full border border-gray-300 rounded">
+                    Save and customize your site…
+                  </button>
+                </div>
+              </div>
+              <SectionOne />
 
-              <SectionTwo
-                title={data.sectionTwo.title}
-                subtitle={data.sectionTwo.subtitle}
-              />
-              <SectionThree
-                title={data.sectionThree.title}
-                subtitle={data.sectionThree.subtitle}
-              />
-              <SectionFour
-                title={data.sectionFour.title}
-                subtitle={data.sectionFour.subtitle}
-              />
-              <SectionFive
-                title={data.sectionFive.title}
-                subtitle={data.sectionFive.subtitle}
-              />
+              <SectionTwo />
+              <SectionThree />
+              <SectionFour />
+              <SectionFive />
+              <SectionSix />
             </div>
           ) : (
             <p>Loading...</p>
