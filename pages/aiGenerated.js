@@ -29,7 +29,7 @@ const AIGenerated = () => {
       </Head>
 
       <div className="w-full bg-gray-50 h-[100px] flex flex-col justify-center items-center">
-        <h1 className="font-bold text-3xl"> FastFlow</h1>
+        <h1 className="font-bold text-3xl">FastFlow</h1>
       </div>
       <div className="grid md:grid-cols-4 min-h-screen gap-4 p-4 bg-gray-50">
         <div className="col-span-1   rounded-3xl p-2 h-[800px] md:h-[850px]">
