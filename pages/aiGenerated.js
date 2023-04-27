@@ -39,14 +39,14 @@ const AIGenerated = () => {
           <div className="p-2 flex-col flex overflow-hidden overflow-x-auto">
             <h1 className="text-xs mt-2 text-blue-900">No-Code Site Editor</h1>
             <p className="text-xs text-black mt-2">
-              Make content updates using Mixo's site editor
+              Make content updates using FastFlow site editor
             </p>
 
             <h1 className="text-xs mt-2 text-blue-900">
               Scalable Site Hosting
             </h1>
             <p className="text-xs text-black mt-2">
-              Site hosted on Mixo's Global Content Network
+              Site hosted on FastFlow Global Content Network
             </p>
 
             <h1 className="text-xs mt-2 text-blue-900">Social Sharing Ready</h1>
