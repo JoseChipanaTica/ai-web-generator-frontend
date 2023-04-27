@@ -20,6 +20,10 @@ export default async function handler(req, res) {
       title: "Contact Us",
       subtitle: "Get in touch or book a table",
     },
+    sectionSix: {
+      title: "lorem",
+      subtitle: "lorem lorem lorem lorem",
+    },
   };
   const { idea } = req.query;
 
