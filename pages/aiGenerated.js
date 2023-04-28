@@ -34,6 +34,7 @@ const AIGenerated = () => {
         const response = await fetch('https://ai-website-generator-production.up.railway.app/' + _id, {
             method: 'GET',
             headers: {'Content-Type': 'application/json'},
+            mode: 'cors'
         },);
         const {template} = await response.json();
         setTemplate(template)

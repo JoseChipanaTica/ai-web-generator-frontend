@@ -14,7 +14,8 @@ const StartupIdeaForm = () => {
             const response = await fetch('https://ai-website-generator-production.up.railway.app/', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({"user_prompt": idea})
+                body: JSON.stringify({"user_prompt": idea}),
+                mode: 'cors'
             },);
             const {_id} = await response.json();
             if (response.ok) {

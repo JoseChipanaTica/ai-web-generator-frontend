@@ -8,7 +8,6 @@ const SectionOne = ({
                         addClass,
                         item
                     }) => {
-    debugger
     return (
         <div
             className={`h-[500px] p-4  flex flex-col   shadow-inner border  ${addClass} `}
