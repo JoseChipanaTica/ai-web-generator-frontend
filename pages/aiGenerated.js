@@ -115,8 +115,8 @@ const AIGenerated = () => {
                             <SectionOne item={template.pages[0].blocks[0]}/>
 
                             <SectionTwo block={template.pages[0].blocks[1].content[0].block}/>
-                            <SectionThree block={template.pages[0].blocks[1].content[0].block}/>
-                            <SectionFour block={template.pages[0].blocks[1].content[0].block}/>
+                            <SectionThree block={template.pages[0].blocks[1].content[1].block}/>
+                            <SectionFour block={template.pages[0].blocks[1].content[2].block}/>
 
                             <SectionFive/>
                             <SectionSix block={template.pages[0].blocks[1].content[0].block}/>
